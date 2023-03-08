@@ -1,0 +1,213 @@
+[
+    {
+        "card_id": 1,
+        "text": "You wake up in a strange room with no memory of how you got there. There's a door on the far side of the room and a window that leads to a dark alleyway. What do you do?",
+        "options": [
+            { "text": "Check the door", "next_card_id": 3 },
+            { "text": "Look out the window", "next_card_id": 2 },
+            { "text": "Search the room", "next_card_id": 4 }
+        ],
+        "health": "100",
+        "require_inventory": [[], [], []]
+    },
+    {
+        "card_id": 2,
+        "text": "You see a shadowy figure in the alleyway further away. They seem to be having a conversation. What do you do?",
+        "options": [
+            { "text": "Try to break the window with an axe and escape", "next_card_id": 7 },
+            { "text": "Try to get their attention with the emergency flare", "next_card_id": 5 },
+            { "text": "Ignore them and continue searching the room", "next_card_id": 4 }
+        ],
+        "health": "+0",
+        "require_inventory": [["axe"], ["emergency flare"], []]
+    },
+    {
+        "card_id": 3,
+        "text": "The door is locked. There's a keypad next to it. What do you do?",
+        "options": [
+            { "text": "Try to guess the code", "next_card_id": 6 },
+            { "text": "Search the room for clues", "next_card_id": 4 },
+            { "text": "Give up and go back to bed", "next_card_id": 1 }
+        ],
+        "health": "+0",
+        "require_inventory": [[""], [""], []]
+    },
+    {
+        "card_id": 4,
+        "text": "You find a note on the nightstand that reads 'Don't trust anyone.' unfortunately, there is a bug behind the paper and it bites you on the hand so 50% of your health is lost. What do you do?",
+        "options": [
+            { "text": "Go back to bed", "next_card_id": 1 },
+            { "text": "Try to find more clues in the room with emergency flare", "next_card_id": 8 },
+            { "text": "Try to open the door again", "next_card_id": 3 }
+        ],
+        "health": "-50",
+        "require_inventory": [[], ["emergency flare"], []]
+    },
+    {
+        "card_id": 5,
+        "text": "The figure reveals themselves to be a friendly ally who can help you escape. However, they need your help first. What do you do?",
+        "options": [
+            { "text": "Agree to help them", "next_card_id": 10 },
+            { "text": "Refuse to help them and continue searching for clues", "next_card_id": 4 },
+            { "text": "Try to escape on your own", "next_card_id": 7 }
+        ],
+        "health": "+0",
+        "require_inventory": [[""], [""], []]
+    },
+    {
+        "card_id": 6,
+        "text": "You guess the code and the door unlocks. However, an alarm goes off. What do you do?",
+        "options": [
+            { "text": "Try to disable the alarm with the plier by cutting the cables", "next_card_id": 11 },
+            { "text": "Run back to the bed and hide", "next_card_id": 1 },
+            { "text": "Run through the door and escape", "next_card_id": 9 }
+        ],
+        "health": "+0",
+        "require_inventory": [["plier"], [""], []]
+    },
+    {
+        "card_id": 7,
+        "text": "You successfully nailed it and escaped. Along the way, you got hurt by stepping on the broken wood piece which make you lose HEALTH 30%. However, you are now outside in a dangerous city. What do you do?",
+        "options": [
+            { "text": "Look for shelter", "next_card_id": 12 },
+            { "text": "Try to find help", "next_card_id": 14 },
+            { "text": "Go it alone", "next_card_id": 9 }
+        ],
+        "health": "-30",
+        "require_inventory": [[""], [""], []]
+    },
+    {
+        "card_id": 8,
+        "text": "You find a hidden compartment in the room containing a key. What do you do?",
+        "options": [
+            { "text": "Use the key to open the door", "next_card_id": 3 },
+            { "text": "try to break the lock with an axe", "next_card_id": 7 },
+            { "text": "Keep the key and continue searching", "next_card_id": 4 }
+        ],
+        "health": "+0",
+        "require_inventory": [[""], ["axe"], []]
+    },
+    {
+        "card_id": 9,
+        "text": "After You make it out of the building, find yourself in a park. However, you see a group of suspicious individuals approaching you. What do you do?",
+        "options": [
+            { "text": "Try to blend in and hide", "next_card_id": 17 },
+            { "text": "Try to fight them off", "next_card_id": 18 },
+            { "text": "Try to run away", "next_card_id": 19 }
+        ],
+        "health": "+0",
+        "require_inventory": [[""], [""], []]
+    },
+    {
+        "card_id": 10,
+        "text": "You help your ally and they help you escape. However, they reveal that they need your help for a bigger mission. What do you do?",
+        "options": [
+            { "text": "Agree to help them", "next_card_id": 20 },
+            { "text": "Refuse to help them and try to go your own way", "next_card_id": 8 },
+            { "text": "Run through the door and escape", "next_card_id": 9 }
+        ],
+        "health": "+0",
+        "require_inventory": [[""], [""], []]
+    },
+    {
+        "card_id": 11,
+        "text": "You continue on your plan to cut it out, but soon realize you've lost your sense of direction to cut it out the wire as there are a lot of wires behind the alarm.As you touch with the bare hand, you got electric shock which make you lose 50% of your health. What do u do?",
+        "options": [
+            { "text": "Cut all of the wires", "next_card_id": 16 },
+            { "text": "Run through the doors", "next_card_id": 9 },
+            { "text": "Find something useful in the room", "next_card_id": 12 }
+        ],
+        "health": "+0",
+        "require_inventory": [[""], [""], []]
+    },
+    {
+        "card_id": 12,
+        "text": "You look around for any clues that might help you figure out how you got there. You find a piece of paper with an address written on it.",
+        "options": [
+            { "text": "you leave the room for more clues", "next_card_id": 9 },
+            { "text": "decide to try to imagine what happened", "next_card_id": 13 },
+            { "text": "Go back to sleep and heal", "next_card_id": 1 }
+        ],
+        "health": "+0",
+        "require_inventory": [[""], [""], []]
+    },
+    {
+        "card_id": 13,
+        "text": "your eyes got closed and try to remember. You see yourself standing in front of a group of people are running towards you, and they seem like they are trying to do something",
+        "options": [
+            { "text": "Try to blend in and hide", "next_card_id": 17 },
+            { "text": "Try to fight them off", "next_card_id": 18 },
+            { "text": " Try to run away", "next_card_id": 19 }
+        ],
+        "health": "+0",
+        "require_inventory": [[""], [""], []]
+    },
+    {
+        "card_id": 14,
+        "text": "You meet with two strangers who wear like the witch in the films. They wanted you to answer honestly related to your personal life to cure your injuries.",
+        "options": [
+            { "text": "Try to lie to them by telling goods things you won't do", "next_card_id": 17 },
+            { "text": "sitting in silence and trying to consider whether it is just a dream or reality", "next_card_id": 15 },
+            { "text": "Try to answer the things correctly and how you regret that", "next_card_id": 20 }
+        ],
+        "health": "+0",
+        "require_inventory": [[""], [""], []]
+    },
+    {
+        "card_id": 15,
+        "text": "You are taking so long to answer, so they just vanish away and there is nothing you can hope to happen. In the end, you just freeze to death in the middle of nowhere while waiting for them to come back sitting there",
+        "options": [
+        ],
+        "health": "0",
+        "require_inventory": [[""], [""], []]
+    },
+    {
+        "card_id": 16,
+        "text": "After You cut all the wires, the sound stops but you hear some footsteps coming to you.",
+        "options": [
+            { "text": "you try to run away as fast as you can", "next_card_id": 9 },
+            { "text": "you try to fight them with the knife", "next_card_id": 18 },
+            { "text": "you decide to wait and ask for help", "next_card_id": 5 }
+        ],
+        "health": "+0",
+        "require_inventory": [[""], ["knife"], []]
+    },
+    {
+        "card_id": 17,
+        "text": "They just identified that you were fake. so they take out your soul and you can't move your body anymore. You are trapped in that imaginary world forever.",
+        "options": [
+        ],
+        "health": "0",
+        "require_inventory": [[""], [""], []]
+    },
+    {
+        "card_id": 18,
+        "text": "You unfortunately defeat the people, but are injured in the process. Your health is lost for 60%. They thought you are dead so they leave you behind.",
+        "options": [
+            { "text": "go back to where you started to sleep and heal your health.", "next_card_id": 1 },
+            { "text": "Try to close your eyes and wish for the good to happen using the magic pill ", "next_card_id": 20 },
+            { "text": "You try to run away from that building", "next_card_id": 9 }
+        ],
+        "health": "-60",
+        "require_inventory": [[""], ["magic pill"], []]
+    },
+    {
+        "card_id": 19,
+        "text": "You try to outrun them but you can't as they seem not to be people. So you just stop and wait for them but they just kept disappearing into somewhere and appearing from somewhere else. Later you hear the voices of people asking one question (Why we should let you get back to your normal life ?) in unison.",
+        "options": [
+            { "text": "Try to lie them by telling goods things you won't do", "next_card_id": 17 },
+            { "text": "sitting in silence and try to consider it is just dream or reality", "next_card_id": 15 },
+            { "text": "Try to answer the things you regret in the past and how you want to fix ", "next_card_id": 20 }
+        ],
+        "health": "+0",
+        "require_inventory": [[""], [""], []]
+    },
+    {
+        "card_id": 20,
+        "text": "They tell you that (you are meant to be alive and this will be over soon). After that, someone touch your shoulder with a cold hand from the back, and you just wake up and realize that it was just a nightmare.",
+        "options": [
+        ],
+        "health": "0",
+        "require_inventory": []
+    }
+]
